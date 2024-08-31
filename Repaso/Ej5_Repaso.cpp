@@ -40,7 +40,7 @@ public:
 
     double dividir() {
         if (B == 0) {
-            throw runtime_error("Error: División por cero no permitida.");
+            throw runtime_error("Error: Division por cero no permitida.");
             //Error
         }
         return A / B;
@@ -60,8 +60,8 @@ int main() {
     try {
         cout << "Suma: " << calc.sumar() << endl;
         cout << "Resta: " << calc.restar() << endl;
-        cout << "Multiplicación: " << calc.multiplicar() << endl;
-        cout << "División: " << calc.dividir() << endl;
+        cout << "Multiplicacion: " << calc.multiplicar() << endl;
+        cout << "Division: " << calc.dividir() << endl;
     } catch (const runtime_error &e) {
         cout << e.what() << endl;
     }
