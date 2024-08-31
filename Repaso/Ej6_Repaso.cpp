@@ -4,8 +4,6 @@
 
 using namespace std;
 
-//Const es utilizado para que el dato ingresado no sea modificado
-
 // Funcion para agregar un contacto al vector
 void agregarContacto(vector<string> &contactos, const string &nombre, const string &numero) {
     // Junta el nombre y el numero del contacto
@@ -31,16 +29,18 @@ void mostrarContactos(const vector<string> &contactos) {
 }
 
 int main() {
-    const vector<string> contactos;
+    vector<string> contactos; 
     int opcion;
     
     do {
+        cout << "-----------------------" << endl;
         cout << "Menu:" << endl;
         cout << "1. Agregar Contacto" << endl;
         cout << "2. Mostrar Contactos" << endl;
         cout << "3. Salir" << endl;
         cout << "Elige una opcion: ";
         cin >> opcion;
+        cout << "-----------------------" << endl;
 
         switch(opcion) {
             case 1: {
